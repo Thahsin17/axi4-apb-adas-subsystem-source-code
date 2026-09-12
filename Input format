@@ -1,0 +1,37 @@
+## 4. Input Format
+
+The testbench applies AXI4 write transactions to the AXI4-to-APB
+communication subsystem.
+
+The input consists of:
+
+- AXI4 write address
+- AXI4 write data
+- AXI4 control and handshake signals
+
+The main test address used in the simulation is:
+
+0x40000000
+
+The testbench applies different hexadecimal data values to verify
+the read/write functionality.
+
+Example input data:
+
+0x00000055
+0x000000AA
+0x00000012
+0x0000000F
+0x0000007F
+0x00000080
+0x12345678
+0x55555555
+0xAAAAAAAA
+0xDEADBEEF
+
+After each write transaction, an AXI4 read transaction is issued
+using the same address. The returned data is then compared with
+the expected data.
+
+The input data is provided directly by the Cocotb testbench during
+simulation.
