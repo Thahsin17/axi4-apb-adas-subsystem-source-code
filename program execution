@@ -1,0 +1,40 @@
+
+## 3. How to Execute the Program
+
+### Step 1: Clone the Repository
+
+Clone the project repository using:
+
+git clone https://github.com/Thahsin17/axi4-apb-adas-subsystem-source-code.git
+
+Navigate to the repository:
+
+cd axi4-apb-adas-subsystem-source-code
+
+### Step 2: Install the Required Software
+
+Install the software and Python packages listed in the `software required` file.
+
+For the Cocotb-based verification environment, ensure that Python and Cocotb are installed.
+
+### Step 3: Run the Cocotb Testbench
+
+The project uses a Python-based Cocotb testbench to verify the
+AXI4-to-APB communication subsystem.
+
+The testbench is executed together with the RTL design using
+an HDL simulator configured for Cocotb.
+
+### Step 4: Verify the Simulation Results
+
+Run the configured simulation and check the terminal output.
+
+The testbench performs AXI4 write and read transactions and
+compares the received data with the expected data.
+
+A successful test is indicated by:
+
+RESULT : PASS
+
+The simulation results should show matching expected and read
+data for the tested transactions.
