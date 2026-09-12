@@ -26,8 +26,9 @@ pip install cocotb
 
 ### Step 3: Run the Cocotb Testbench
 
-The Python testbench is executed together with the RTL design
-using the HDL simulator configured for the project.
+The Python testbench file `tb_axi_to_apb_subsystem.py` is executed
+together with the RTL design using the HDL simulator configured for
+the project.
 
 The testbench performs:
 
