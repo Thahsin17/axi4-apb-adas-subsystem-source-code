@@ -1,0 +1,30 @@
+
+# AXI4-to-APB Communication Subsystem IP for ADAS
+
+## 1. Overview
+
+This project implements an AXI4-to-APB communication subsystem IP
+intended for ADAS-oriented SoC applications.
+
+The project includes a Python-based Cocotb verification environment
+used to verify AXI4 read/write transactions and the corresponding
+APB peripheral accesses.
+
+The verification focuses on register-level read/write operations
+and checks whether the received data matches the expected data.
+
+---
+
+## 2. Software Required
+
+The following software is required to run the verification:
+
+- Python 3.x
+- Cocotb
+- A supported HDL simulator
+- AXI4-to-APB subsystem RTL
+
+### Python Packages
+
+The Python verification environment uses:
+cocotb
