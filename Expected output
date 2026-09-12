@@ -1,0 +1,29 @@
+## 5. Expected Output
+
+The Cocotb testbench performs AXI4 write and read transactions and
+checks whether the received read data matches the expected data.
+
+For each test case, the simulation displays:
+
+- AXI4 read request address
+- AXI4 address handshake
+- AXI4 read response data
+- AXI4 read response status
+- Expected data
+- Actual read data
+- Test result
+
+A successful test case produces:
+
+RESULT : PASS
+
+Example:
+
+AXI READ RESPONSE RDATA = 0x00000055
+AXI READ RESPONSE RRESP = 00
+EXPECTED DATA : 0x00000055
+READ DATA     : 0x00000055
+RESULT        : PASS
+
+The expected output is obtained when the read data matches the
+expected data for each test case.
